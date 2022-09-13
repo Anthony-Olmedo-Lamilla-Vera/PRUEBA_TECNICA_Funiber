@@ -1,11 +1,8 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
 import "./App.css";
 import {
-  Button,
   FormControl,
   InputGroup,
-  FormGroup,
   Form,
   ListGroup,
   Badge,
@@ -15,11 +12,8 @@ import {
   Alert,
 } from "react-bootstrap";
 
-import { Link } from "react-router-dom";
-
-import { Trash3Fill, PlusCircle } from "react-bootstrap-icons";
+import { Trash3Fill } from "react-bootstrap-icons";
 import useOperations from "./Hooks/useOperations";
-import { RepositoryTodoList } from "./Repository/RepositoryTodoList";
 
 export default function App() {
   const [ValueInput, setValueInput] = useState("");
@@ -29,46 +23,6 @@ export default function App() {
 
   return (
     <>
-      <nav className="navbar navbar-expand-sm navbar-light bg-light">
-        <div className="container-fluid">
-          <a className="navbar-brand" href="/">
-            Prueba Tecnica
-          </a>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarID"
-            aria-controls="navbarID"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div
-            className="collapse navbar-collapse justify-content-end"
-            id="navbarID"
-          >
-            <div className="navbar-nav gap-2 ">
-              <Link
-                className="btn btn-success active "
-                aria-current="page"
-                to="/user/login"
-              >
-                Login
-              </Link>
-
-              <Link
-                className="btn btn-success active  bg-danger"
-                aria-current="page"
-                to="/user/register"
-              >
-                Register
-              </Link>
-            </div>
-          </div>
-        </div>
-      </nav>
       <Container fluid="md" className="vh-100">
         <div className="display-1 my-5 text-bg-dark text-center">Todo List</div>
         <Row className="align-items-center justify-content-center vh-50">

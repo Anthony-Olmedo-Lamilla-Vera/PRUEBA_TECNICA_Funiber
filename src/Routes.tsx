@@ -1,5 +1,4 @@
-import React from "react";
-import { BrowserRouter, Routes, Route, Outlet, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import App from "./App";
 import Login from "./Pages/Login";
 import Register from "./Pages/Register";
