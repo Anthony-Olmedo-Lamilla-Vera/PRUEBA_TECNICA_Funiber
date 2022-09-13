@@ -6,19 +6,19 @@ function useOperations() {
   let [List, setList] = useState<ItemList[]>([
     {
       id: 1,
-      name: "Jose",
+      name: "Jugar Futbol",
     },
     {
       id: 2,
-      name: "Carlos",
+      name: "Hacer Tareas",
     },
     {
       id: 3,
-      name: "Anthonio",
+      name: "Estudiar lecciones",
     },
     {
       id: 4,
-      name: "Jaime",
+      name: "Cocinar",
     },
   ]);
   function AddItem(description: string) {
